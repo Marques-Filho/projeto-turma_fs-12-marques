@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+body {
+    background-image: url('https://static.vecteezy.com/ti/fotos-gratis/p2/6263904-fundo-abstrato-branco-pano-de-fundo-para-design-de-apresentacao-para-site-gratis-foto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#titulo {
+    background-color: rgb(37, 57, 87);
+}
+
+button {
+    background-color: transparent;
+    border: transparent;  
+}
+
+.navbar-brand {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    color:black !important;
+    font-size: 20px !important;
+}
+
+.navbar-brand::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 100%;
+    background:  #53add1;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+    position: absolute;
+    left: 0;
+}
+.navbar-brand:hover{
+    color: #53add1;
+}
+.navbar-brand:hover::after {
+    transform: scaleX(1);
+}
+
+.front-back-text {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.img-depoi {
+    border: 6px groove #61caf3;
+    border-radius: 50%;
+}
